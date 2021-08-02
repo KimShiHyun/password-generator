@@ -113,14 +113,14 @@ function getPasswordOptions() {
   }
 
   var confirmLowerCase = confirm(
-    "Click OK to confirm to includ of lowercase characters"
+    "Click OK to confirm to include lowercase characters"
   );
   var confirmUpperCase = confirm(
-    "Click OK to confirm inclusion of uppercase characters"
+    "Click OK to confirm to include uppercase characters"
   );
-  var confirmNumbers = confirm("Click OK to confirm inclusion of numbers");
+  var confirmNumbers = confirm("Click OK to confirm to include numbers");
   var confirmSpecialCharacters = confirm(
-    "Click OK to confirm inclusion of special characters"
+    "Click OK to confirm to include special characters"
   );
 
   if (
@@ -129,7 +129,7 @@ function getPasswordOptions() {
     confirmNumbers === false &&
     confirmSpecialCharacters === false
   ) {
-    alert("Must select at least one character type");
+    alert("Must select at least confirm one option");
     return;
   }
 
